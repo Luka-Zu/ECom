@@ -3,6 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7DA38B18-8FCB-4E64-A2EC-E1E7374EC953}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{D2D06A3E-24E6-4B77-AE6D-79F11DD86C3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogAPI", "CatalogAPI\CatalogAPI.csproj", "{2D98A460-0444-49AF-83D3-AD5426DC4BB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{112000CB-25A1-4DB2-9411-9EEB2ABF4A76}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +21,15 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2D06A3E-24E6-4B77-AE6D-79F11DD86C3B} = {7DA38B18-8FCB-4E64-A2EC-E1E7374EC953}
+		{2D98A460-0444-49AF-83D3-AD5426DC4BB5} = {D2D06A3E-24E6-4B77-AE6D-79F11DD86C3B}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D98A460-0444-49AF-83D3-AD5426DC4BB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D98A460-0444-49AF-83D3-AD5426DC4BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D98A460-0444-49AF-83D3-AD5426DC4BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D98A460-0444-49AF-83D3-AD5426DC4BB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
